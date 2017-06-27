@@ -12,16 +12,16 @@
  * @package ACStarter
  */
 
-get_header(); ?>
+get_header("simple"); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php
-			$post = get_post();
+			$post = get_post(6);
 			setup_postdata( $post );
 			
-			get_template_part( 'template-parts/content', get_post_format() );
+			get_template_part( 'template-parts/content', "index" );
 			?>
 
 		</main><!-- #main -->
