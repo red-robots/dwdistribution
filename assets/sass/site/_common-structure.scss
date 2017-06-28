@@ -7,7 +7,7 @@
 }
 .copy {
   font-size: 18px;
-  color: black;
+  color: $color__text-main;
   @media screen and (min-width: $tabwidth){
     font-size: 22px;
   }
@@ -24,41 +24,34 @@
   }
   strong, b, em {
     font-weight: 700;
-    color: black;
   }
   a {
     text-decoration: none;
-    color: black;
+    color:  $color__dw-blue;
     position: relative;
     &:hover {
-      color: black;
+      color:  $color__dw-blue;
     }
   }
   h1, h2, h3 {
     margin: 0 0 10px 0;
     text-transform: uppercase;
-    color: black;
+    color:  $color__text-main;
   }
   h1 {
-    color: black;
-    text-transform: uppercase;
     font-size: 25px;
-    font-weight: 500;
     @media screen and (min-width: $tabwidth){ 
         font-size: 30px;
     }
   }
   h2 {
-    color: black;
     font-size: 20px;
-    font-weight: 500;
     @media screen and (min-width: $tabwidth){
         font-size: 30px;
     }
   }
   h3 {
     font-size: 20px;
-    color: black;
   }
   ul, ol {
     padding: 0;
@@ -72,7 +65,7 @@
       a {
         cursor: pointer;
         &:hover {
-          color: black;
+          color: $color__text-main;
         }
       }
       ul.sub-menu {

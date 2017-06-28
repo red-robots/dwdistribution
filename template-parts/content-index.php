@@ -50,6 +50,7 @@ endif;?>>
 					</div><!--.outer-wrapper-->
 				<?php endwhile;?>
 			</div><!--.row-3-->
-		<?php endif;?>
+			<?php wp_reset_postdata();
+		endif;?>
 	</div><!--.row-2-->
 </article><!-- #post-## -->
