@@ -12,9 +12,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-sports"); ?> <?php if($background_image):
 		echo 'style="background-image: url('.$background_image['url'].')"';
 	endif;?>>
-	<div class="row-1">
+	<header class="row-1">
 		<h1><?php the_title();?></h1>
-	</div><!--.row-1-->
+	</header><!--.row-1-->
 	<?php 
 	$args = array(
 		'post_type'=>'page',

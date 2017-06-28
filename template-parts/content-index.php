@@ -24,9 +24,9 @@ endif;?>>
 	<div class="row-2" <?php post_class("template-index"); ?> <?php if($background_image):
 		echo 'style="background-image: url('.$background_image['url'].')"';
 	endif;?>>
-		<div class="row-1">
-			<?php the_title();?>
-		</div><!--.row-1-->
+		<header class="row-1">
+			<h2><?php the_title();?></h2>
+		</header><!--.row-1-->
 		<?php $args = array(
 			'post_type'=>'page',
 			'post_per_page'=>'4',
