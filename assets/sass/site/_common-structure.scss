@@ -27,10 +27,10 @@
   }
   a {
     text-decoration: none;
-    color:  $color__dw-blue;
+    color: $color__dw-blue;
     position: relative;
     &:hover {
-      color:  $color__dw-blue;
+      color: $color__dw-red;
     }
   }
   h1, h2, h3 {
@@ -64,8 +64,9 @@
       list-style-type: square;
       a {
         cursor: pointer;
+        color: $color__dw-blue;
         &:hover {
-          color: $color__text-main;
+          color: $color__dw-red;
         }
       }
       ul.sub-menu {
