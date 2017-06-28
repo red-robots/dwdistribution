@@ -24,7 +24,7 @@ get_header(); ?>
 				<div class="row-2 outer-wrapper">
 					<div class="inner-wrapper copy">
 						<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below?', 'acstarter' ); ?></p>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
 					</div><!-- .inner-wrapper -->
 				</div><!-- .outer-wrapper -->
 			</section><!-- .error-404 -->

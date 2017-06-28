@@ -18,7 +18,7 @@
 	<div class="row-2 outer-wrapper">
 		<div class="inner-wrapper copy ">
 			<?php the_content();?>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
 		</div><!--.inner-wrapper-->
 	</div><!--.row-4-->
 </article><!-- #post-## -->
