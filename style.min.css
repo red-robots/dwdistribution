@@ -16,7 +16,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*//*!
+*/@import url("https://fonts.googleapis.com/css?family=Rubik:400,700");/*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -1233,7 +1233,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:black;font-family:"Rubik",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -1248,7 +1248,7 @@ big{font-size:125%}
 .custom-color{color:#444}
 html{box-sizing:border-box}
 *,*:before,*:after{box-sizing:inherit}
-body{background:#ecf8f8}
+body{background:white}
 blockquote,q{quotes:"" ""}
 blockquote:before,blockquote:after,q:before,q:after{content:""}
 hr{background-color:#ccc;border:0;height:1px;margin-bottom:1.5em}
@@ -1272,21 +1272,6 @@ a{color:#0999f3}
 a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
-.main-navigation{clear:both;display:block;float:left;width:100%}
-.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}
-.main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}
-.main-navigation ul ul ul{left:-999em;top:0}
-.main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
-.main-navigation ul ul a{width:200px}
-.main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{float:left;position:relative}
-.main-navigation a{display:block;text-decoration:none}
-.menu-toggle,.main-navigation.toggled ul{display:block}
-@media screen and (min-width:37.5em){.menu-toggle{display:none}
-.main-navigation ul{display:block}
-}.site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
-.comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
-.comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
 .navigation{width:100%;margin:20px 0 30px 0;clear:both;float:left}
 .navigation ul{margin:0;padding:0}
 .navigation li{margin:0;display:inline;list-style:none}
@@ -1401,7 +1386,48 @@ html[xmlns] .flexslider .slides{display:block}
 .copy ul li a,.copy ol li a{cursor:pointer}
 .copy ul li a:hover,.copy ol li a:hover{color:black}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+#masthead{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:20px}
+@media screen and (min-width:600px){#masthead{-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:1% calc(3% - 20px) 2% 3%;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+}@media screen and (min-width:1200px){#masthead{-webkit-align-content:flex-end;-ms-flex-line-pack:end;align-content:flex-end;-webkit-align-items:flex-end;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+}#masthead .logo{width:80%;margin:0 auto;-webkit-box-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}
+@media screen and (min-width:600px){#masthead .logo{width:30%;min-width:250px;margin:0}
+}#masthead .logo a{display:block}
+#masthead .logo a img{display:block;width:100%}
+#masthead #site-navigation{width:100%;text-align:center}
+#masthead #site-navigation.toggled .menu-primary-container{display:block}
+@media screen and (min-width:600px){#masthead #site-navigation{width:70%}
+}#masthead #site-navigation button{margin:20px 0;text-shadow:none;box-shadow:none;background-color:#064e80;color:white;border-radius:3px;border:0;font-size:18px}
+@media screen and (min-width:600px){#masthead #site-navigation button{display:none}
+}#masthead #site-navigation .menu-primary-container{display:none}
+@media screen and (min-width:600px){#masthead #site-navigation .menu-primary-container{display:block}
+}#masthead #site-navigation .menu-primary-container ul{margin:0;padding:0;text-align:center}
+@media screen and (min-width:600px){#masthead #site-navigation .menu-primary-container ul{text-align:right}
+}#masthead #site-navigation .menu-primary-container ul li{list-style-type:none;margin:10px 0}
+@media screen and (min-width:600px){#masthead #site-navigation .menu-primary-container ul li{display:inline-block;margin:0 20px}
+#masthead #site-navigation .menu-primary-container ul li:last-child{margin-right:25px}
+}#masthead #site-navigation .menu-primary-container ul li a{color:black;text-decoration:none;font-size:18px}
+@media screen and (min-width:1200px){#masthead #site-navigation .menu-primary-container ul li a{font-size:20px}
+}#masthead #site-navigation .menu-primary-container ul li a:hover{color:black}
+#colophon{background-color:#064e80;text-align:center;color:white;padding:20px;font-size:18px}
+@media screen and (min-width:600px){#colophon{padding:4% 4% 2% 4%;font-size:20px}
+}#main .template-index{background-repeat:no-repeat;background-size:100% auto;background-position:top}
+@media screen and (max-width:599px){#main .template-index{background-image:none !important}
+}#main .template-index>header.row-1{background-color:rgba(255,255,255,0.7)}
+#main .template-index>.row-2{background-repeat:no-repeat;background-size:100% auto;background-position:top}
+@media screen and (min-width:600px){#main .template-index>.row-2{background-image:none !important}
+}#main .template-index>.row-2>.row-1{padding:20px;color:white;text-align:center;font-weight:700;text-shadow:2px 5px 5px black;font-size:35px}
+@media screen and (min-width:600px){#main .template-index>.row-2>.row-1{padding:10% 5% 15% 5%;font-size:50px}
+}@media screen and (min-width:1200px){#main .template-index>.row-2>.row-1{font-size:100px}
+}#main .template-index>.row-2>.row-2{padding:20px 0}
+@media screen and (min-width:600px){#main .template-index>.row-2>.row-2{padding:0 10% 15% 10%}
+}#main .template-index>.row-2>.row-2>.outer-wrapper{width:calc(100% - 40px);margin:20px;background-color:white;box-shadow:3px 3px 20px black}
+@media screen and (min-width:600px){#main .template-index>.row-2>.row-2>.outer-wrapper{margin:2%;width:46%;float:left}
+}#main .template-index>.row-2>.row-2>.outer-wrapper a{display:block;padding:15px;text-decoration:none;height:100%}
+#main .template-index>.row-2>.row-2>.outer-wrapper a>.inner-wrapper{background-repeat:no-repeat;background-size:cover;background-position:center;padding-top:80%;height:100%;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:flex-end;-ms-flex-line-pack:end;align-content:flex-end;-webkit-align-items:flex-end;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
+#main .template-index>.row-2>.row-2>.outer-wrapper a>.inner-wrapper h2{width:100%;background-color:rgba(0,0,0,0.5);color:white;text-align:center;padding:20px;margin:0;font-size:20px}
+@media screen and (min-width:600px){#main .template-index>.row-2>.row-2>.outer-wrapper a>.inner-wrapper h2{padding:4% 1%}
+}@media screen and (min-width:1200px){#main .template-index>.row-2>.row-2>.outer-wrapper a>.inner-wrapper h2{font-size:35px}
+}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}

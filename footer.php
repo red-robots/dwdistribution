@@ -14,7 +14,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-	</div><!-- wrapper -->
+		<?php $line_1 = get_field("footer_line_1","option");
+		if($line_1):?>
+			<?php echo $line_1;?>
+		<?php endif;?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

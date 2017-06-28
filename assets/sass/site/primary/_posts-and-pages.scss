@@ -1,0 +1,86 @@
+#main {
+    .template-index {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: top;
+        @media screen and (max-width: $tabwidth - 1px){ 
+            background-image: none !important;
+        }
+        >header.row-1 {
+            background-color: rgba(255,255,255,0.7);
+        }
+        >.row-2 {
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: top;
+            @media screen and (min-width: $tabwidth){
+                background-image: none !important;
+            }
+            >.row-1 {
+                padding: 20px;
+                color: white;
+                text-align: center;
+                font-weight: 700;
+                text-shadow: 2px 5px 5px black;
+                font-size: 35px;
+                @media screen and (min-width: $tabwidth){
+                    padding: 10% 5% 15% 5%;
+                    font-size: 50px;
+                }
+                @media screen and (min-width: $deskwidth){
+                    font-size: 100px;
+                }
+            }
+            >.row-2 {
+                padding: 20px 0;
+                @media screen and (min-width: $tabwidth){
+                    padding: 0 10% 15% 10%;
+                }
+                >.outer-wrapper {
+                    width: calc(100% - 40px);
+                    margin: 20px;
+                    background-color: white;
+                    box-shadow: 3px 3px 20px black;
+                    @media screen and (min-width: $tabwidth){
+                        margin: 2%;
+                        width: 46%;
+                        float: left;
+                    }
+                    a {
+                        display: block;
+                        padding: 15px;
+                        text-decoration: none;
+                        height: 100%;
+                        >.inner-wrapper {
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            padding-top: 80%;
+                            height: 100%;
+                            @include flexbox();
+                            @include flexbox-justify(center);
+                            @include flexbox-align-content(flex-end);
+                            @include flexbox-align-items(flex-end);
+                            @include flexbox-direction(row);
+                            h2 {
+                                width: 100%;
+                                background-color: rgba(0,0,0,0.5);
+                                color: white;
+                                text-align: center;
+                                padding: 20px;
+                                margin: 0;
+                                font-size: 20px;
+                                @media screen and (min-width: $tabwidth){
+                                    padding: 4% 1%;
+                                }
+                                @media screen and (min-width: $deskwidth){
+                                    font-size: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -81,3 +81,110 @@
     }
   }
 }
+#masthead {
+    @include flexbox();
+    @include flexbox-justify(center);
+    @include flexbox-align-content(stretch);
+    @include flexbox-align-items(stretch);
+    @include flexbox-direction(column);
+    padding: 20px;
+    @media screen and (min-width: $tabwidth){
+        @include flexbox-direction(row);
+        padding: 1% calc(3% - 20px) 2% 3%;
+        @include flexbox-align-content(center);
+        @include flexbox-align-items(center);
+    }
+    @media screen and (min-width: $deskwidth){
+      @include flexbox-align-content(flex-end);
+      @include flexbox-align-items(flex-end);
+    }
+  .logo {
+    width: 80%;
+    margin: 0 auto;
+    @include flexbox-flex(0,0,auto);
+    @media screen and (min-width: $tabwidth){
+      width: 30%;
+      min-width: 250px;
+      margin: 0;
+    }
+    a {
+      display: block;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  #site-navigation {
+    width: 100%;
+    text-align: center;
+    &.toggled {
+      .menu-primary-container {
+        display: block;
+      }
+    }
+    @media screen and (min-width: $tabwidth){
+      width: 70%;
+    }
+    button {
+      margin: 20px 0;
+      text-shadow: none;
+      box-shadow: none;
+      background-color: $color__dw-blue;
+      color: white;
+      border-radius: 3px;
+      border: 0;
+      font-size: 18px;
+      @media screen and (min-width: $tabwidth){
+        display: none;
+      }
+    }
+    .menu-primary-container {
+      display: none;
+      @media screen and (min-width: $tabwidth){
+        display: block;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        @media screen and (min-width: $tabwidth){
+          text-align: right;
+        }
+        li {
+          list-style-type: none;
+          margin: 10px 0;
+          @media screen and (min-width: $tabwidth){
+            display: inline-block;
+            margin: 0 20px;
+            &:last-child {
+              margin-right: 25px;
+            }
+          }
+          a {
+            color: $color__text-main;
+            text-decoration: none;
+            font-size: 18px;
+            @media screen and (min-width: $deskwidth){
+              font-size: 20px;
+            }
+            &:hover {
+              color: $color__text-main;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#colophon {
+  background-color: $color__dw-blue;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  @media screen and (min-width: $tabwidth){
+    padding: 4% 4% 2% 4%;
+    font-size: 20px;
+  }
+}
