@@ -1409,7 +1409,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:1200px){#masthead #site-navigation .menu-primary-container ul li a{font-size:20px}
 }#masthead #site-navigation .menu-primary-container ul li a:hover{color:black}
 #colophon{background-color:#064e80;text-align:center;color:white;padding:20px;font-size:18px}
-@media screen and (min-width:600px){#colophon{padding:4% 4% 2% 4%;font-size:20px}
+@media screen and (min-width:600px){#colophon{padding:4% 4% 2% 4%;font-size:22px}
 }#main .template-index{background-repeat:no-repeat;background-size:100% auto;background-position:top}
 @media screen and (max-width:599px){#main .template-index{background-image:none !important}
 }#main .template-index>header.row-1{background-color:rgba(255,255,255,0.7)}
