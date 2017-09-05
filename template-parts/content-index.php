@@ -53,4 +53,14 @@ endif;?>>
 			<?php wp_reset_postdata();
 		endif;?>
 	</div><!--.row-2-->
+	<div class="row-3">
+		<?php $post = get_post(6);
+		setup_postdata( $post );
+		$video = get_field("video");
+		if($video):?>
+			<div class="video">
+				<?php echo $video;?>
+			</div><!--.video-->
+		<?php endif;?>
+	</div><!--.row-3-->
 </article><!-- #post-## -->
